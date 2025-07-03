@@ -5,6 +5,7 @@
   "description": "Frontend for the Budget Planner app built with React and Tailwind CSS.",
   "scripts": {
     "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"

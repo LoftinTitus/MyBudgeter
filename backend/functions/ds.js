@@ -1,1 +1,29 @@
+require('dotenv').config();
+
+
+const { createClient } = require('@supabase/supabase-js');
+
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+async function getBudgets() {
+  const { data, error } = await supabase.from('budgets').select('*').order('date', { ascending: false });
+  if (error) throw error;
+  return data;
+}
+
+async function addBudget(budget) {
+  const { data, error } = await supabase.from('budgets').insert([budget]);
+  if (error) throw error;
+  return data;
+}
+
+async function deleteBudget(id) {
+  const { data, error } = await supabase.from('budgets').delete().eq('id', id);
+  if (error) throw error;
+  return data;
+}
+
+module.exports = { getBudgets, addBudget, deleteBudget };
 
