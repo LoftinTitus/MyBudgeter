@@ -1,1 +1,13 @@
-
+{
+  "name": "budget-planner-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Budget Planner",
+  "main": "functions/api.js",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "serverless-http": "^3.2.0"
+  }
+}
