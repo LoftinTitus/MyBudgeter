@@ -29,8 +29,7 @@ A simple, modern budget planning web app to help users track income, expenses, a
 ## Project To-Do List
 
 ### Setup
-- [ ] Set up React project with Tailwind CSS
-- [ ] Deploy basic frontend to GitHub Pages
+- [X] Set up React project with Tailwind CSS
 
 ### Frontend
 - [ ] Design basic homepage layout
