@@ -12,7 +12,7 @@ A simple, modern budget planning web app to help users track income, expenses, a
 - [Recharts] — for displaying budget charts
 
 ### Backend (Hosted on Netlify)
-- [Node.js] with [Express] — REST API for handling user data and budgets
+- [Node.js] — REST API for handling user data and budgets
 - Deployed with **Netlify Backend**
 
 ### Database (Free Cloud)
@@ -33,26 +33,25 @@ A simple, modern budget planning web app to help users track income, expenses, a
 
 ### Frontend
 - [ ] Design basic homepage layout
-- [ ] Create budget input form (income, expenses)
-- [ ] Display budget summary
+- [X] Create budget input form (income, expenses)
+- [X] Display budget summary
 - [ ] Integrate charts to visualize spending
-- [ ] Connect frontend to backend API
+- [X] Connect frontend to backend API
 
 ### Backend
-- [ ] Set up Node.js + Express API
-- [ ] Deploy backend to Netlify Functions
+- [X] Deploy backend to Netlify Functions
 - [ ] Create API routes for:
   - [ ] User registration/login
-  - [ ] Adding/updating budget items
+  - [X] Adding/updating budget items
   - [ ] Fetching budget summary
 
 ### Database
-- [ ] Set up Firebase or Supabase project
-- [ ] Connect backend to database
-- [ ] Secure data with proper rules
+- [X] Set up Supabase project
+- [X] Connect backend to database
+- [X] Secure data with proper rules
 
 ### Extras
 - [ ] Add responsive design for mobile devices
 - [ ] Improve overall styling & user experience
-- [ ] Add authentication (optional)
-- [ ] Error handling & form validation
+- [ ] Add authentication
+- [X] Error handling & form validation
