@@ -1,0 +1,9 @@
+[dev]
+  targetPort = 5173
+  port = 8888
+  functions = "backend/functions"
+
+[build]
+  command = "npm run build --prefix frontend"
+  publish = "frontend/dist"
+  functions = "backend/functions"
