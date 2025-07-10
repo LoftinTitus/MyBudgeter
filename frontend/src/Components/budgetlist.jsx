@@ -7,7 +7,6 @@ function BudgetList({ budgets, onDelete }) {
   if (budgets.length === 0) {
     return (
       <div className="text-center py-12">
-        <div className="text-6xl mb-4">📊</div>
         <p className="text-gray-500 text-lg">No budgets added yet</p>
         <p className="text-gray-400 text-sm mt-2">Add your first budget item to get started!</p>
       </div>
@@ -115,7 +114,7 @@ function BudgetList({ budgets, onDelete }) {
                   }`}>
                     {budget.amount >= 0 ? '+' : ''}${Math.abs(budget.amount).toFixed(2)}
                   </span>
-                  <span>📅 {new Date(budget.date).toLocaleDateString()}</span>
+                  <span>{new Date(budget.date).toLocaleDateString()}</span>
                 </div>
               </div>
               <button
@@ -123,7 +122,7 @@ function BudgetList({ budgets, onDelete }) {
                 className="text-red-500 hover:text-red-700 hover:bg-red-50 p-2 rounded-full transition-colors"
                 title="Delete item"
               >
-                🗑️
+                Delete
               </button>
             </div>
           </div>

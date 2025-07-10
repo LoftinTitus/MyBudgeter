@@ -74,7 +74,7 @@ function BudgetForm({ onAdd }) {
               onChange={(e) => setType(e.target.value)}
               className="mr-2"
             />
-            <span className="text-red-600">💸 Expense</span>
+            <span className="text-red-600">Expense</span>
           </label>
           <label className="flex items-center">
             <input
@@ -84,7 +84,7 @@ function BudgetForm({ onAdd }) {
               onChange={(e) => setType(e.target.value)}
               className="mr-2"
             />
-            <span className="text-green-600">💰 Income</span>
+            <span className="text-green-600">Income</span>
           </label>
         </div>
       </div>
