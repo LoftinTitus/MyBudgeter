@@ -58,7 +58,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename="/MyBudgeter">
+    <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/MyBudgeter' : '/'}>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
         {/* Header */}
         <header className="bg-white shadow-lg">
