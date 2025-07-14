@@ -1,10 +1,14 @@
 require('dotenv').config();
 
-
 const { createClient } = require('@supabase/supabase-js');
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+  throw new Error('Missing Supabase environment variables. Please check SUPABASE_URL and SUPABASE_KEY.');
+}
+
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function getBudgets() {
@@ -14,7 +18,7 @@ async function getBudgets() {
 }
 
 async function addBudget(budget) {
-  const { data, error } = await supabase.from('budgets').insert([budget]);
+  const { data, error } = await supabase.from('budgets').insert([budget]).select();
   if (error) throw error;
   return data;
 }
