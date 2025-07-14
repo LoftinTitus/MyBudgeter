@@ -94,12 +94,12 @@ function App() {
 
               {/* Budget List */}
               <div className="bg-white rounded-lg shadow-lg p-6">
-                <div className="flex justify-between items-center mb-6">
+                <div className="relative flex justify-center items-center mb-6">
                   <h2 className="text-xl font-semibold text-gray-800">Budget Items</h2>
                   {budgets.length > 0 && (
                     <button
                       onClick={clearBudgets}
-                      className="text-red-500 hover:text-red-700 text-sm font-medium"
+                      className="absolute right-0 text-red-500 hover:text-red-700 text-sm font-medium"
                     >
                       Clear All
                     </button>

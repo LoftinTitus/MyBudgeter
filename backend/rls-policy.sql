@@ -1,8 +1,4 @@
 -- Simple RLS Policy for Budget App
--- Run this in your Supabase SQL Editor
-
--- Create simple policies that allow all operations for now
--- You can make these more restrictive later with user authentication
 
 -- Policy for SELECT (reading budgets)
 CREATE POLICY "Allow public read access" 
